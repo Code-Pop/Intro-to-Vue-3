@@ -2,10 +2,12 @@ Vue.component('product-display', {
   props: {
     premium: {
       type: Boolean,
-      required: true,
-    },
+      required: true
+    }
   },
-  template: `
+  template:
+    /*html*/
+    `
    <div class="product">
         
     <div class="container">
@@ -56,18 +58,18 @@ Vue.component('product-display', {
           id: 2234,
           color: 'green',
           image: './assets/images/socks_green.jpg',
-          quantity: 10,
+          quantity: 10
         },
         {
           id: 2235,
           color: 'blue',
           image: './assets/images/socks_blue.jpg',
-          quantity: 0,
-        },
+          quantity: 0
+        }
       ],
       reviews: [],
       tabs: ['review-form', 'review-list'],
-      activeTab: 'review-form',
+      activeTab: 'review-form'
     }
   },
   methods: {
@@ -79,7 +81,7 @@ Vue.component('product-display', {
     },
     addReview(review) {
       this.reviews.push(review)
-    },
+    }
   },
   computed: {
     productName() {
@@ -96,6 +98,6 @@ Vue.component('product-display', {
         return 'Free'
       }
       return 2.99
-    },
-  },
+    }
+  }
 })

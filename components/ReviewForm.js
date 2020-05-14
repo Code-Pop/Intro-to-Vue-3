@@ -1,5 +1,7 @@
 Vue.component('review-form', {
-  template: `
+  template:
+    /*html*/
+    `
     <form class="review-form" @submit.prevent="onSubmit">
       <h3>Leave a review</h3>
 
@@ -26,7 +28,7 @@ Vue.component('review-form', {
     return {
       name: '',
       text: '',
-      rating: null,
+      rating: null
     }
   },
   methods: {
@@ -34,12 +36,12 @@ Vue.component('review-form', {
       const review = {
         name: this.name,
         text: this.text,
-        rating: this.rating,
+        rating: this.rating
       }
       this.$emit('review-submitted', review)
       this.name = ''
       this.text = ''
       this.rating = null
-    },
-  },
+    }
+  }
 })
