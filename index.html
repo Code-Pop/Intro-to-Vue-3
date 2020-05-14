@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue Mastery</title>
+    <!-- Import Styles -->
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <!-- Import Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <!-- Import Components -->
+    <script src="./components/ProductDisplay.js"></script>
+    <script src="./components/ReviewForm.js"></script>
+    <script src="./components/ReviewList.js"></script>
+
+    <div id="app">
+      <div class="nav-bar"></div>
+
+      <div class="cart">
+        <p>Cart({{ cart.length }})</p>
+      </div>
+      <product-display
+        :premium="premium"
+        @add-to-cart="updateCart"
+      ></product-display>
+    </div>
+
+    <!-- Import App -->
+    <script src="./main.js"></script>
+  </body>
+</html>
