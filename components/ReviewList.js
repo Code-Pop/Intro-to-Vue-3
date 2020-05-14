@@ -1,5 +1,7 @@
-Vue.component('review-list', {
-  template: `
+app.component('review-list', {
+  template:
+    /*html*/
+    `
     <div class="review-container">
       <p v-if="!reviews.length">There are no reviews yet.</p>
       <ul v-else>
@@ -14,7 +16,7 @@ Vue.component('review-list', {
   props: {
     reviews: {
       type: Array,
-      required: true,
-    },
-  },
+      required: true
+    }
+  }
 })

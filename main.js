@@ -1,12 +1,15 @@
-const app = new Vue({
-  el: '#app',
-  data: {
-    premium: true,
-    cart: [],
+const app = Vue.createApp({
+  data() {
+    return {
+      premium: true,
+      cart: []
+    }
   },
   methods: {
     updateCart(id) {
       this.cart.push(id)
-    },
-  },
+    }
+  }
 })
+
+app.mount('#app')
