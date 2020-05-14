@@ -55,13 +55,13 @@ Vue.component('product-display', {
         {
           id: 2234,
           color: 'green',
-          image: './assets/socks_green.jpg',
+          image: './assets/images/socks_green.jpg',
           quantity: 10,
         },
         {
           id: 2235,
           color: 'blue',
-          image: './assets/socks_blue.jpg',
+          image: './assets/images/socks_blue.jpg',
           quantity: 0,
         },
       ],
