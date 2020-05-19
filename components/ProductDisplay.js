@@ -25,7 +25,7 @@ app.component('product-display', {
           <li v-for="detail in details">{{ detail }}</li>
         </ul>
 
-        <div class="color-box"
+        <div class="color-circle"
           v-for="(variant, index) in variants" 
           :key="variant.id"
           :style="{ backgroundColor: variant.color }"
