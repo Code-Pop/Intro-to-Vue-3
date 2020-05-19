@@ -145,6 +145,7 @@ select {
   height: 40px;
   font-size: 20px;
   background-color: white;
+  cursor: pointer;
 }
 
 textarea {
