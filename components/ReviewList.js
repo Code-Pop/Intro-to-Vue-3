@@ -2,9 +2,9 @@ app.component('review-list', {
   template:
     /*html*/
     `
-    <div class="review-container">
-      <p v-if="!reviews.length">There are no reviews yet.</p>
-      <ul v-else>
+    <div  v-if="reviews.length" class="review-container">
+    <h3>Reviews:</h3>
+      <ul>
         <li v-for="(review, index) in reviews" :key="index">
           {{ review.name }} gave this {{ review.rating }} stars
           <br/>
