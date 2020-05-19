@@ -25,7 +25,7 @@ app.component('product-display', {
           <li v-for="detail in details">{{ detail }}</li>
         </ul>
 
-        <div class="color-circle"
+        <div class="color-box"
           v-for="(variant, index) in variants" 
           :key="variant.id"
           :style="{ backgroundColor: variant.color }"
@@ -40,12 +40,10 @@ app.component('product-display', {
         Add to cart
         </button>
 
-        </div> 
       </div>
 
-      <review-list :reviews="reviews"></review-list>
-      <review-form @review-submitted="addReview" ></review-form>
-
+        <review-list :reviews="reviews"></review-list>
+        <review-form @review-submitted="addReview" ></review-form>
     </div>
    `,
   data() {
