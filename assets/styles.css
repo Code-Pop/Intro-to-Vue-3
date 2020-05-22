@@ -40,11 +40,6 @@ body {
   border-radius: 50%;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
 
 .disabledButton {
   background-color: #d8d8d8;
@@ -97,10 +92,16 @@ p {
   font-size: 22px;
 }
 
-.product {
+.product-display {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .product-image,

@@ -8,9 +8,9 @@ app.component('product-display', {
   template:
     /*html*/
     `
-   <div class="product">
+   <div class="product-display">
         
-    <div class="container">
+    <div class="product-container">
       <div class="product-image">
         <img :src="image" />
       </div>
@@ -39,12 +39,12 @@ app.component('product-display', {
           >
         Add to cart
         </button>
-
       </div>
-
-        <review-list :reviews="reviews"></review-list>
-        <review-form @review-submitted="addReview" ></review-form>
     </div>
+
+    <review-list :reviews="reviews"></review-list>
+    <review-form @review-submitted="addReview" ></review-form>
+  </div>
    `,
   data() {
     return {
