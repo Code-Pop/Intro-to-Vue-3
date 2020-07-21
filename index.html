@@ -25,7 +25,7 @@
               <li v-for="detail in details">{{ detail }}</li>
             </ul>
             <ul>
-              <li v-for="size in sizes">{{ size }}</li>
+              <li v-for="(size, index) in sizes" :key="index">{{ size }}</li>
             </ul>
             <div v-for="variant in variants" :key="variant.id">{{ variant.color }}</div>
           </div>
