@@ -14,9 +14,10 @@ app.component('product-display', {
         <p v-else>Out of Stock</p>
 
         <p>Shipping: {{ shipping }}</p>
-        <ul>
-          <li v-for="detail in details">{{ detail }}</li>
-        </ul>
+        
+        <!-- solution -->
+        <product-details :details="details"></product-details>
+        <!-- solution -->
 
         <div 
           v-for="(variant, index) in variants" 
@@ -50,7 +51,7 @@ app.component('product-display', {
   },
   methods: {
       addToCart() {
-          this.$emit('add-to-cart', this.variants[this.selectedVariant].id)
+          this.cart += 1
       },
       updateVariant(index) {
           this.selectedVariant = index
