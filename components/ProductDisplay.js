@@ -1,5 +1,10 @@
 app.component('product-display', {
-
+  props: {
+    premium: {
+      type: Boolean,
+      required: true
+    }
+  },
   template: 
   /*html*/
   `<div class="product-display">
