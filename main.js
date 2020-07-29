@@ -10,4 +10,5 @@ const app = Vue.createApp({
             this.cart.push(id)
         }
     }
-})
+  })
+  
