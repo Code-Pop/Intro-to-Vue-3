@@ -1,7 +1,7 @@
 const app = Vue.createApp({
     data() {
         return {
-            cart: [],
+            cart: 0,
             premium: true
         }
     },
