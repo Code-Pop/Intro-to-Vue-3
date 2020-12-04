@@ -9,9 +9,7 @@ const app = Vue.createApp({
         { id: 2234, color: 'green'},
         { id: 2235, color: 'blue'}
       ],
-      sizes: [
-        
-      ]
+      sizes: ['S','M','L','X','XL']
     }
   }
 })
