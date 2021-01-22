@@ -2,8 +2,9 @@ const app = Vue.createApp({
     data() {
         return {
           product: {
-            name: "Socks",
-            description: "They've seen things."
+            name: "Green Socks",
+            description: "They've seen things.",
+            image: "./assets/images/socks_green.jpg",
           },
         };
     }
