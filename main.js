@@ -5,6 +5,8 @@ const app = Vue.createApp({
             name: "Green Socks",
             description: "They've seen things.",
             image: "./assets/images/socks_green.jpg",
+            inStock: 50,
+            isOnSale: true
           },
         };
     }

@@ -13,11 +13,20 @@
       <div class="product-display">
         <div class="product-container">
           <div class="product-image">
-            <img :src="product.image" :alt="product.name">
+            <img :src="product.image" :alt="product.name" />
           </div>
           <div class="product-info">
             <h1>{{ product.name }}</h1>
             <p>{{ product.description }}</p>
+            <div class="product-additional-info">
+              <p v-if="product.inStock > 10">In stock</p>
+              <p v-else-if="product.inStock > 0">
+                Only {{ product.inStock }} left!
+              </p>
+              <p v-else>Out of stock</p>
+
+              <p v-show="product.isOnSale">On Sale!</p>
+            </div>
           </div>
         </div>
       </div>
