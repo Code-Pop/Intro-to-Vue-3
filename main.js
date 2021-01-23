@@ -1,6 +1,7 @@
 const app = Vue.createApp({
   data() {
     return {
+      cart: 0,
       products: [
         {
           name: "Green Socks",
@@ -20,5 +21,10 @@ const app = Vue.createApp({
         },
       ],
     };
+  },
+  methods: {
+    addToCart() {
+      this.cart += 1;
+    },
   },
 });
