@@ -9,71 +9,13 @@
   <body>
     <div id="app">
       <div class="nav-bar"></div>
-
       <div class="cart">Cart ({{ cart }})</div>
-
-      <div class="product-display">
-        <div
-          v-for="(product, productIndex) in products"
-          :key="productIndex"
-          class="product-container"
-        >
-          <div class="product-image">
-            <img
-              :src="getImage(productIndex, product.selectedVariantIndex)"
-              :alt="product.name"
-            />
-          </div>
-          <div class="product-info">
-            <h1>{{ title(product) }}</h1>
-            <p>{{ product.description }}</p>
-            <div class="product-additional-info">
-              <p
-                v-if="getQuantity(productIndex, product.selectedVariantIndex) > 10"
-              >
-                In stock
-              </p>
-              <p
-                v-else-if="getQuantity(productIndex, product.selectedVariantIndex)"
-              >
-                Only {{ getQuantity(productIndex, product.selectedVariantIndex)
-                }} left!
-              </p>
-              <p v-else>Out of stock</p>
-
-              <p v-show="product.isOnSale">On Sale!</p>
-            </div>
-            <div class="product-details">
-              <ul>
-                <li v-for="detail in product.details" :key="detail">
-                  {{ detail }}
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="product-variants">
-            <ul>
-              <li
-                v-for="(variant, variantIndex) in product.variants"
-                :key="variant"
-                @mouseover="selectVariant(productIndex, variantIndex)"
-                class="color-circle"
-                :style="{backgroundColor: variant.color}"
-              ></li>
-            </ul>
-          </div>
-          <button
-            @click="addToCart"
-            :disabled="!getQuantity(productIndex, product.selectedVariantIndex)"
-            :class="[{ disabledButton: !getQuantity(productIndex, product.selectedVariantIndex) }, 'button']"
-          >
-            Add to cart!
-          </button>
-        </div>
-      </div>
+      <product-display :premium="premium"></product-display>
     </div>
 
     <script src="./main.js"></script>
+    <script src="./components/ProductDisplay.js"></script>
+    <script src="./components/ProductDetails.js"></script>
     <script>
       const mountedApp = app.mount("#app");
     </script>
