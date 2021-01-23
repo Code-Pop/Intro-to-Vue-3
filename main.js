@@ -4,20 +4,16 @@ const app = Vue.createApp({
       cart: 0,
       products: [
         {
-          name: "Green Socks",
-          description: "They've seen things.",
+          name: "Socks",
+          description: "Fresh out of the oven.",
           details: ["50% cotton", "30% wool", "20% polyester"],
           image: "./assets/images/socks_green.jpg",
           inStock: 50,
           isOnSale: true,
-        },
-        {
-          name: "Blue Socks",
-          description: "They've been places.",
-          details: ["50% cotton", "30% wool", "20% polyester"],
-          image: "./assets/images/socks_blue.jpg",
-          inStock: 8,
-          isOnSale: false,
+          variants: [
+            { color: "blue", image: "./assets/images/socks_blue.jpg" },
+            { color: "green", image: "./assets/images/socks_green.jpg" },
+          ],
         },
       ],
     };
@@ -25,6 +21,11 @@ const app = Vue.createApp({
   methods: {
     addToCart() {
       this.cart += 1;
+    },
+    setProductImage(relevantProduct, variantImage) {
+      this.products.find(
+        (product) => product === relevantProduct
+      ).image = variantImage;
     },
   },
 });

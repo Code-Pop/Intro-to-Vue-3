@@ -41,6 +41,17 @@
               </ul>
             </div>
           </div>
+          <div class="product-variants">
+              <ul>
+                <li
+                  v-for="variant in product.variants"
+                  :key="variant"
+                  @mouseover="setProductImage(product, variant.image)">
+                  {{ variant.color }}
+                </li>
+              </ul>
+            </div>
+          </div>
           <button class="button" @click="addToCart">Add to cart!</button>
         </div>
       </div>
