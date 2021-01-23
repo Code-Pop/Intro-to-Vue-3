@@ -8,14 +8,13 @@ const app = Vue.createApp({
           brand: "VueStuff",
           description: "Fresh out of the oven.",
           details: ["50% cotton", "30% wool", "20% polyester"],
-          image: "./assets/images/socks_green.jpg",
-          inStock: 50,
+          selectedVariantIndex: 0,
           isOnSale: true,
           variants: [
             {
               color: "blue",
               image: "./assets/images/socks_blue.jpg",
-              quantity: 50,
+              quantity: 8,
             },
             {
               color: "green",
@@ -31,16 +30,20 @@ const app = Vue.createApp({
     addToCart() {
       this.cart += 1;
     },
-    setProductImage(relevantProduct, variantImage) {
-      this.products.find(
-        (product) => product === relevantProduct
-      ).image = variantImage;
+    title(product) {
+      return `${product.brand} ${product.name}`;
+    },
+    selectVariant(productIndex, variantIndex) {
+      this.products[productIndex].selectedVariantIndex = variantIndex;
+    },
+    getImage(productIndex, variantIndex) {
+      return this.products[productIndex].variants[variantIndex].image;
+    },
+    getQuantity(productIndex, variantIndex) {
+      return this.products[productIndex].variants[variantIndex].quantity;
     },
   },
   computed: {
-    title() {
-      // Well, I should learn how to use computed values with arguments
-      return `${this.products[0].brand} ${this.products[0].name}`;
-    },
+    1: 1,
   },
 });

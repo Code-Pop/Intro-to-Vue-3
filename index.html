@@ -14,20 +14,30 @@
 
       <div class="product-display">
         <div
-          v-for="product in products"
-          :key="products.indexOf(product)"
+          v-for="(product, productIndex) in products"
+          :key="productIndex"
           class="product-container"
         >
           <div class="product-image">
-            <img :src="product.image" :alt="product.name" />
+            <img
+              :src="getImage(productIndex, product.selectedVariantIndex)"
+              :alt="product.name"
+            />
           </div>
           <div class="product-info">
-            <h1>{{ title }}</h1>
+            <h1>{{ title(product) }}</h1>
             <p>{{ product.description }}</p>
             <div class="product-additional-info">
-              <p v-if="product.inStock > 10">In stock</p>
-              <p v-else-if="product.inStock">
-                Only {{ product.inStock }} left!
+              <p
+                v-if="getQuantity(productIndex, product.selectedVariantIndex) > 10"
+              >
+                In stock
+              </p>
+              <p
+                v-else-if="getQuantity(productIndex, product.selectedVariantIndex)"
+              >
+                Only {{ getQuantity(productIndex, product.selectedVariantIndex)
+                }} left!
               </p>
               <p v-else>Out of stock</p>
 
@@ -44,9 +54,9 @@
           <div class="product-variants">
             <ul>
               <li
-                v-for="variant in product.variants"
+                v-for="(variant, variantIndex) in product.variants"
                 :key="variant"
-                @mouseover="setProductImage(product, variant.image)"
+                @mouseover="selectVariant(productIndex, variantIndex)"
                 class="color-circle"
                 :style="{backgroundColor: variant.color}"
               ></li>
@@ -54,8 +64,8 @@
           </div>
           <button
             @click="addToCart"
-            :disabled="!product.inStock"
-            :class="[{ disabledButton: !product.inStock }, 'button']"
+            :disabled="!getQuantity(productIndex, product.selectedVariantIndex)"
+            :class="[{ disabledButton: !getQuantity(productIndex, product.selectedVariantIndex) }, 'button']"
           >
             Add to cart!
           </button>
