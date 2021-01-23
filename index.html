@@ -26,7 +26,7 @@
             <p>{{ product.description }}</p>
             <div class="product-additional-info">
               <p v-if="product.inStock > 10">In stock</p>
-              <p v-else-if="product.inStock > 0">
+              <p v-else-if="product.inStock">
                 Only {{ product.inStock }} left!
               </p>
               <p v-else>Out of stock</p>
@@ -42,17 +42,23 @@
             </div>
           </div>
           <div class="product-variants">
-              <ul>
-                <li
-                  v-for="variant in product.variants"
-                  :key="variant"
-                  @mouseover="setProductImage(product, variant.image)">
-                  {{ variant.color }}
-                </li>
-              </ul>
-            </div>
+            <ul>
+              <li
+                v-for="variant in product.variants"
+                :key="variant"
+                @mouseover="setProductImage(product, variant.image)"
+                class="color-circle"
+                :style="{backgroundColor: variant.color}"
+              ></li>
+            </ul>
           </div>
-          <button class="button" @click="addToCart">Add to cart!</button>
+          <button
+            @click="addToCart"
+            :disabled="!product.inStock"
+            :class="[{ disabledButton: !product.inStock }, 'button']"
+          >
+            Add to cart!
+          </button>
         </div>
       </div>
     </div>
