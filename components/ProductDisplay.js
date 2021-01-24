@@ -4,6 +4,10 @@ app.component("product-display", {
       type: Boolean,
       required: true,
     },
+    cart: {
+      type: Array,
+      required: true,
+    },
   },
   template:
     /*html*/
@@ -54,11 +58,18 @@ app.component("product-display", {
             </ul>
           </div>
           <button
-            @click="addToCart"
+            @click="addToCart(product.variants[product.selectedVariantIndex].id)"
             :disabled="!getQuantity(productIndex, product.selectedVariantIndex)"
             :class="[{ disabledButton: !getQuantity(productIndex, product.selectedVariantIndex) }, 'button']"
           >
             Add to cart!
+          </button>
+          <button
+            @click="removeFromCart(product.variants[product.selectedVariantIndex].id)"
+            :disabled="!cart.includes(product.variants[product.selectedVariantIndex].id)"
+            :class="[{ disabledButton: !cart.includes(product.variants[product.selectedVariantIndex].id) }, 'button']"
+          >
+            Remove :(
           </button>
         </div>
     </div>`,
@@ -75,14 +86,16 @@ app.component("product-display", {
           isOnSale: true,
           variants: [
             {
+              id: 133,
               color: "blue",
               image: "./assets/images/socks_blue.jpg",
               quantity: 8,
             },
             {
+              id: 134,
               color: "green",
               image: "./assets/images/socks_green.jpg",
-              quantity: 0,
+              quantity: 1,
             },
           ],
         },
@@ -91,8 +104,11 @@ app.component("product-display", {
   },
 
   methods: {
-    addToCart() {
-      this.cart += 1;
+    addToCart(selectedVariantId) {
+      this.$emit("add-to-cart", selectedVariantId);
+    },
+    removeFromCart(selectedVariantId) {
+      this.$emit("remove-from-cart", selectedVariantId);
     },
     title(product) {
       return `${product.brand} ${product.name}`;
