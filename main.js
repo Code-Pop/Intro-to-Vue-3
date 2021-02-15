@@ -5,6 +5,7 @@ const app = Vue.createApp({
             // Solution
             description: 'A warm fuzzy pair of socks.' 
             // Solution
+
         }
     }
 })
