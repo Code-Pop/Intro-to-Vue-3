@@ -6,8 +6,9 @@
     <!-- Import Styles -->
     <link rel="stylesheet" href="./assets/styles.css" />
     <!-- Import Vue.js -->
-    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
   </head>
+
   <body>
     <div id="app">
       <div class="nav-bar"></div>
@@ -15,10 +16,13 @@
       <div class="product-display">
         <div class="product-container">
           <div class="product-image">
+            <img :src="image" :alt="imageAlt">
             <!-- image goes here -->
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
+            <p>{{description}}</p>
+            <a :href="url">Search for more socks!</a>
           </div>
         </div>
       </div>
