@@ -6,21 +6,23 @@
     <!-- Import Styles -->
     <link rel="stylesheet" href="./assets/styles.css" />
     <!-- Import Vue.js -->
-    <script src="https://unpkg.com/vue@next"></script>
-  </head> 
+    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+  </head>
   <body>
     <div id="app">
       <div class="nav-bar"></div>
-    
-      <div class="cart">Cart({{ cart }})</div>
-      <product-display :premium="premium"></product-display>
-      <product-display></product-display>
+
+      <div class="cart">Cart({{ cart.length }})</div>
+      <product-display :premium="premium" @add-to-cart="updateCart"></product-display>
     </div>
 
     <!-- Import App -->
     <script src="./main.js"></script>
+
     <!-- Import Components -->
-  <script src="./components/ProductDisplay.js"></script>
+    <script src="./components/ProductDisplay.js"></script>
+    <script src="./components/ReviewForm.js"></script>
+    <script src="./components/ReviewList.js"></script>
 
     <!-- Mount App -->
     <script>
@@ -28,6 +30,3 @@
     </script>
   </body>
 </html>
-
-
-
