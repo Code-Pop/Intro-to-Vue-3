@@ -6,14 +6,36 @@
     <!-- Import Styles -->
     <link rel="stylesheet" href="./assets/styles.css" />
     <!-- Import Vue.js -->
-    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue@next"></script></script>
   </head>
   <body>
     <div id="app">
-      <h1>Product goes here</h1>
+      <div class="nav-bar"></div>
+
+      <div class="product-display">
+        <div class="product-container"></div>
+        <div class="product-image">
+      <img v-bind:src="image">
+
+        </div>
+
+      </div>
+      <div class="product-info">
+      <h1>{{ product }}</h1>
+      <p v-if="inventory> 10">In Stock</p>
+      <p v-else-if="inventory <= 10 && inventory > 0">Almost sold out!</p>
+      <p v-else>Out of Stock</p>
+      <!--solution-->
+      <p v-if="onSale">On Sale!</p>
+      <!--solution-->
+      <a :href="url">Made in china</a>
     </div>
 
     <!-- Import Js -->
     <script src="./main.js"></script>
+    <!-- Mount App-->
+    <script>
+      const mountedApp = app.mount('#app')
+    </script>
   </body>
 </html>
