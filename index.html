@@ -13,7 +13,10 @@
       <div class="nav-bar"></div>
 
       <div class="cart">Cart({{ cart.length }})</div>
-      <product-display :premium="premium" @add-to-cart="updateCart"></product-display>
+      <product-display
+        :premium="premium"
+        @add-to-cart="updateCart"
+      ></product-display>
     </div>
 
     <!-- Import App -->
@@ -21,10 +24,12 @@
 
     <!-- Import Components -->
     <script src="./components/ProductDisplay.js"></script>
+    <script src="./components/ReviewForm.js"></script>
+    <script src="./components/ReviewList.js"></script>
 
     <!-- Mount App -->
     <script>
-      const mountedApp = app.mount('#app')
+      const mountedApp = app.mount("#app");
     </script>
   </body>
 </html>
