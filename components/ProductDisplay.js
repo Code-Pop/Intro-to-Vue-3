@@ -42,8 +42,6 @@ app.component('product-display', {
         <!-- solution -->
         <button 
         class="button" 
-        :class="{ disabledButton: !inStock }" 
-        :disabled="!inStock" 
         @click="removeFromCart">
         Remove Item
       </button>
