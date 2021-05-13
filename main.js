@@ -28,7 +28,7 @@ const app = Vue.createApp({
             return this.variants[this.selectedVariant].image
         },
         inStock() {
-            return this.variants[this.selectedVariant].image
+            return this.variants[this.selectedVariant].quantity
         }
     }
 })
