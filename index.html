@@ -22,7 +22,7 @@
             <p v-if="inStock">In Stock</p>
             <p v-else>Out of Stock</p>
             <ul>
-              <li v-for="detail in details">{{ detail }}</li>
+              <li v-for="(detail, index) in details" :key="index">{{ detail }}</li>
             </ul>
             <!-- solution -->
             <ul>
