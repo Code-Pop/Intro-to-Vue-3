@@ -15,19 +15,24 @@ app.component('product-display',{
             </div>
             <div class="product-info">
               <h1>{{ title }}</h1>
+
               <p v-if="inStock">In Stock</p>
               <p v-else>Out of Stock</p>
+
               <p>Shipping: {{shipping}}</p>
+
               <ul>
                 <li v-for="detail in details">{{ detail }}</li>
               </ul>
 
               <div 
-                class="color-circle" 
                 v-for="(variant, index) in variants" 
                 :key="variant.id" 
-                @mouseover="updateVariant(index)" 
-                :style="{ backgroundColor: variant.color }"></div>
+                @mouseover="updateVariant(index)"
+                class="color-circle"  
+                :style="{ backgroundColor: variant.color }">
+              </div>
+
               <button 
                 class="button" 
                 :class="{ disabledButton: !inStock }" 
@@ -37,8 +42,7 @@ app.component('product-display',{
               </button>
             </div>
           </div>
-      </div>
-    `,
+      </div>`,
 
     data() {
         return {
@@ -54,11 +58,12 @@ app.component('product-display',{
     },
     methods: {
         addToCart() {
-            this.cart += 1
+            this.$emit('add-to-cart', this.variants[this.selectedVariant].id)
         },
         updateVariant(index) {
             this.selectedVariant = index
         }
+
     },
     computed:{
         title(){
