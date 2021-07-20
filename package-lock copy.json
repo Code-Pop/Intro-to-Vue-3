@@ -1,0 +1,19 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {
+    "vue": {
+      "version": "2.6.14",
+      "resolved": "https://registry.nlark.com/vue/download/vue-2.6.14.tgz?cache=0&sync_timestamp=1626737957695&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fvue%2Fdownload%2Fvue-2.6.14.tgz",
+      "integrity": "sha1-5RqlJQJQ1Wmj+606ilpofWA24jU="
+    },
+    "vue-power-drag": {
+      "version": "0.2.0",
+      "resolved": "https://registry.nlark.com/vue-power-drag/download/vue-power-drag-0.2.0.tgz",
+      "integrity": "sha1-/ti6NM4zS/1KtJosIKkZLJZ5A6k=",
+      "requires": {
+        "vue": "^2.2.1"
+      }
+    }
+  }
+}
