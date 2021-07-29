@@ -10,6 +10,7 @@
   </head>
   <body>
     <div id="app">
+
       <div class="nav-bar"></div>
       
       <div class="product-display">
@@ -19,6 +20,7 @@
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
+
             <p v-if="inStock">In Stock</p>
             <p v-else>Out of Stock</p>
 
@@ -32,9 +34,16 @@
             <!-- solution -->
             <div v-for="variant in variants" :key="variant.id">{{ variant.color }}</div>
 
+
           </div>
         </div>
       </div>
+
+      <h1>{{ product }}</h1>
+      
+      <p>{{ description }}</p>
+      
+
     </div>
 
     <!-- Import App -->
