@@ -1,0 +1,1039 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"quere",
+				"querySelector"
+			],
+			[
+				"re",
+				"require"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"inline",
+				"inline-block\tdisplay"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.js",
+			"settings":
+			{
+				"buffer_size": 79,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					5,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAAAAAAAAAAAAAAAAAAAAAAXAAAAY29uc3QgcHJvZHVjdCA9ICdTb2Nrcyc",
+					"AQAAAAAAAAABAAAAFwAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"insert",
+					{
+						"characters": "const"
+					},
+					"BQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAMAAAAAAAAAAAAAAAMAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAFAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": " app"
+					},
+					"BAAAAAUAAAAAAAAABgAAAAAAAAAAAAAABgAAAAAAAAAHAAAAAAAAAAAAAAAHAAAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAAAAACQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAABQAAAAAAAAAFAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					17,
+					1,
+					"insert",
+					{
+						"characters": " ="
+					},
+					"AgAAAAkAAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAALAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAACQAAAAAAAAAJAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					18,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAAsAAAAAAAAADAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAACwAAAAAAAAALAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"insert",
+					{
+						"characters": "Vue"
+					},
+					"AwAAAAwAAAAAAAAADQAAAAAAAAAAAAAADQAAAAAAAAAOAAAAAAAAAAAAAAAOAAAAAAAAAA8AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADAAAAAAAAAAMAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					25,
+					1,
+					"insert",
+					{
+						"characters": "."
+					},
+					"AQAAAA8AAAAAAAAAEAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADwAAAAAAAAAPAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					28,
+					1,
+					"insert",
+					{
+						"characters": "createA"
+					},
+					"BwAAABAAAAAAAAAAEQAAAAAAAAAAAAAAEQAAAAAAAAASAAAAAAAAAAAAAAASAAAAAAAAABMAAAAAAAAAAAAAABMAAAAAAAAAFAAAAAAAAAAAAAAAFAAAAAAAAAAVAAAAAAAAAAAAAAAVAAAAAAAAABYAAAAAAAAAAAAAABYAAAAAAAAAFwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAEAAAAAAAAAAQAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					31,
+					1,
+					"insert",
+					{
+						"characters": "pp"
+					},
+					"AgAAABcAAAAAAAAAGAAAAAAAAAAAAAAAGAAAAAAAAAAZAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAFwAAAAAAAAAXAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					39,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAABkAAAAAAAAAGwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAGQAAAAAAAAAZAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					42,
+					1,
+					"insert_snippet",
+					{
+						"contents": "{$0}"
+					},
+					"AQAAABoAAAAAAAAAHAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAGgAAAAAAAAAaAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					50,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Add Line in Braces.sublime-macro"
+					},
+					"AwAAABsAAAAAAAAAHAAAAAAAAAAAAAAAHAAAAAAAAAAdAAAAAAAAAAAAAAAcAAAAAAAAAB0AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAGwAAAAAAAAAbAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					54,
+					1,
+					"insert",
+					{
+						"characters": "data"
+					},
+					"BAAAAB0AAAAAAAAAHgAAAAAAAAAAAAAAHgAAAAAAAAAfAAAAAAAAAAAAAAAfAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAIQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAHQAAAAAAAAAdAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					57,
+					1,
+					"insert",
+					{
+						"characters": ":"
+					},
+					"AQAAACEAAAAAAAAAIgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIQAAAAAAAAAhAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					65,
+					1,
+					"insert",
+					{
+						"characters": " function"
+					},
+					"CQAAACIAAAAAAAAAIwAAAAAAAAAAAAAAIwAAAAAAAAAkAAAAAAAAAAAAAAAkAAAAAAAAACUAAAAAAAAAAAAAACUAAAAAAAAAJgAAAAAAAAAAAAAAJgAAAAAAAAAnAAAAAAAAAAAAAAAnAAAAAAAAACgAAAAAAAAAAAAAACgAAAAAAAAAKQAAAAAAAAAAAAAAKQAAAAAAAAAqAAAAAAAAAAAAAAAqAAAAAAAAACsAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAIgAAAAAAAAAiAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					68,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAACsAAAAAAAAALQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAKwAAAAAAAAArAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					71,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"BAAAACwAAAAAAAAALQAAAAAAAAAAAAAALQAAAAAAAAAuAAAAAAAAAAAAAAAtAAAAAAAAAC0AAAAAAAAAAQAAAAktAAAAAAAAAC8AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAALAAAAAAAAAAsAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					79,
+					3,
+					"left_delete",
+					null,
+					"AwAAAC4AAAAAAAAALgAAAAAAAAABAAAACS0AAAAAAAAALQAAAAAAAAABAAAACSwAAAAAAAAALAAAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAALwAAAAAAAAAvAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					84,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAC0AAAAAAAAALgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAALQAAAAAAAAAtAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					85,
+					1,
+					"insert_snippet",
+					{
+						"contents": "{$0}"
+					},
+					"AQAAAC4AAAAAAAAAMAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAALgAAAAAAAAAuAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					86,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Add Line in Braces.sublime-macro"
+					},
+					"BgAAAC8AAAAAAAAAMAAAAAAAAAAAAAAAMAAAAAAAAAAxAAAAAAAAAAAAAAAxAAAAAAAAADIAAAAAAAAAAAAAADIAAAAAAAAAMwAAAAAAAAAAAAAAMAAAAAAAAAAwAAAAAAAAAAEAAAAJMAAAAAAAAAAyAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAALwAAAAAAAAAvAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					94,
+					1,
+					"insert",
+					{
+						"characters": "return"
+					},
+					"BgAAADIAAAAAAAAAMwAAAAAAAAAAAAAAMwAAAAAAAAA0AAAAAAAAAAAAAAA0AAAAAAAAADUAAAAAAAAAAAAAADUAAAAAAAAANgAAAAAAAAAAAAAANgAAAAAAAAA3AAAAAAAAAAAAAAA3AAAAAAAAADgAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAMgAAAAAAAAAyAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					97,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAADgAAAAAAAAAOQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAOAAAAAAAAAA4AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					98,
+					1,
+					"insert_snippet",
+					{
+						"contents": "{$0}"
+					},
+					"AQAAADkAAAAAAAAAOwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAOQAAAAAAAAA5AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					99,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Add Line in Braces.sublime-macro"
+					},
+					"BgAAADoAAAAAAAAAOwAAAAAAAAAAAAAAOwAAAAAAAAA9AAAAAAAAAAAAAAA9AAAAAAAAAD4AAAAAAAAAAAAAAD4AAAAAAAAAQAAAAAAAAAAAAAAAOwAAAAAAAAA7AAAAAAAAAAIAAAAJCTsAAAAAAAAAPgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAOgAAAAAAAAA6AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					107,
+					1,
+					"insert",
+					{
+						"characters": "product"
+					},
+					"BwAAAD4AAAAAAAAAPwAAAAAAAAAAAAAAPwAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAEEAAAAAAAAAAAAAAEEAAAAAAAAAQgAAAAAAAAAAAAAAQgAAAAAAAABDAAAAAAAAAAAAAABDAAAAAAAAAEQAAAAAAAAAAAAAAEQAAAAAAAAARQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAPgAAAAAAAAA+AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					111,
+					1,
+					"insert",
+					{
+						"characters": ":"
+					},
+					"AQAAAEUAAAAAAAAARgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAARQAAAAAAAABFAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					112,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAEYAAAAAAAAARwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAARgAAAAAAAABGAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					120,
+					1,
+					"insert_snippet",
+					{
+						"contents": "'$0'"
+					},
+					"AQAAAEcAAAAAAAAASQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAARwAAAAAAAABHAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					124,
+					1,
+					"insert",
+					{
+						"characters": "Socks"
+					},
+					"BQAAAEgAAAAAAAAASQAAAAAAAAAAAAAASQAAAAAAAABKAAAAAAAAAAAAAABKAAAAAAAAAEsAAAAAAAAAAAAAAEsAAAAAAAAATAAAAAAAAAAAAAAATAAAAAAAAABNAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAASAAAAAAAAABIAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					135,
+					1,
+					"insert_snippet",
+					{
+						"contents": "(${0:$SELECTION})"
+					},
+					"AgAAACEAAAAAAAAAIQAAAAAAAAAMAAAAOiBmdW5jdGlvbigpIQAAAAAAAAAvAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAALQAAAAAAAAAhAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					139,
+					1,
+					"left_delete",
+					null,
+					"AQAAACIAAAAAAAAAIgAAAAAAAAAMAAAAOiBmdW5jdGlvbigp",
+					"AQAAAAAAAAABAAAAIgAAAAAAAAAuAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 552,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					2,
+					"left_delete",
+					null,
+					"AgAAAIwBAAAAAAAAjAEAAAAAAAABAAAAc4sBAAAAAAAAiwEAAAAAAAABAAAASg",
+					"AQAAAAAAAAABAAAAjQEAAAAAAACMAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					4,
+					1,
+					"insert",
+					{
+						"characters": "Ao"
+					},
+					"AgAAAIsBAAAAAAAAjAEAAAAAAAAAAAAAjAEAAAAAAACNAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAiwEAAAAAAACLAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					5,
+					1,
+					"left_delete",
+					null,
+					"AQAAAIwBAAAAAAAAjAEAAAAAAAABAAAAbw",
+					"AQAAAAAAAAABAAAAjQEAAAAAAACNAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": "pp"
+					},
+					"AgAAAIwBAAAAAAAAjQEAAAAAAAAAAAAAjQEAAAAAAACOAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAjAEAAAAAAACMAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"BQAAALgBAAAAAAAAuQEAAAAAAAAAAAAAuQEAAAAAAAC9AQAAAAAAAAAAAAC9AQAAAAAAAL4BAAAAAAAAAAAAAL4BAAAAAAAAwgEAAAAAAAAAAAAAuQEAAAAAAAC5AQAAAAAAAAQAAAAgICAg",
+					"AQAAAAAAAAABAAAAuAEAAAAAAAC4AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					19,
+					1,
+					"paste",
+					null,
+					"AQAAALkBAAAAAAAA8wEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAuQEAAAAAAAC5AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"insert",
+					{
+						"characters": "\n\t"
+					},
+					"AwAAALkBAAAAAAAAugEAAAAAAAAAAAAA9QEAAAAAAAD1AQAAAAAAAAQAAAAgICAgugEAAAAAAAC8AQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAuQEAAAAAAAC5AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					23,
+					1,
+					"insert",
+					{
+						"characters": "\t"
+					},
+					"AQAAALwBAAAAAAAAvgEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvAEAAAAAAAC8AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					26,
+					1,
+					"insert",
+					{
+						"characters": "Mount"
+					},
+					"BgAAAMQBAAAAAAAAxQEAAAAAAAAAAAAAxQEAAAAAAADFAQAAAAAAAAYAAABJbXBvcnTFAQAAAAAAAMYBAAAAAAAAAAAAAMYBAAAAAAAAxwEAAAAAAAAAAAAAxwEAAAAAAADIAQAAAAAAAAAAAADIAQAAAAAAAMkBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAygEAAAAAAADEAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					29,
+					2,
+					"left_delete",
+					null,
+					"AgAAAN4BAAAAAAAA3gEAAAAAAAAPAAAAc3JjPSIuL21haW4uanMi3QEAAAAAAADdAQAAAAAAAAEAAAAg",
+					"AQAAAAAAAAABAAAA7QEAAAAAAADeAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					31,
+					1,
+					"auto_indent_tag",
+					null,
+					"AQAAAN4BAAAAAAAA6gEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3gEAAAAAAADeAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					32,
+					1,
+					"insert",
+					{
+						"characters": "const"
+					},
+					"BQAAAOUBAAAAAAAA5gEAAAAAAAAAAAAA5gEAAAAAAADnAQAAAAAAAAAAAADnAQAAAAAAAOgBAAAAAAAAAAAAAOgBAAAAAAAA6QEAAAAAAAAAAAAA6QEAAAAAAADqAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA5QEAAAAAAADlAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					33,
+					1,
+					"insert",
+					{
+						"characters": " mounted"
+					},
+					"CAAAAOoBAAAAAAAA6wEAAAAAAAAAAAAA6wEAAAAAAADsAQAAAAAAAAAAAADsAQAAAAAAAO0BAAAAAAAAAAAAAO0BAAAAAAAA7gEAAAAAAAAAAAAA7gEAAAAAAADvAQAAAAAAAAAAAADvAQAAAAAAAPABAAAAAAAAAAAAAPABAAAAAAAA8QEAAAAAAAAAAAAA8QEAAAAAAADyAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA6gEAAAAAAADqAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					34,
+					1,
+					"insert",
+					{
+						"characters": "App"
+					},
+					"AwAAAPIBAAAAAAAA8wEAAAAAAAAAAAAA8wEAAAAAAAD0AQAAAAAAAAAAAAD0AQAAAAAAAPUBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA8gEAAAAAAADyAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					35,
+					1,
+					"insert",
+					{
+						"characters": " ="
+					},
+					"AgAAAPUBAAAAAAAA9gEAAAAAAAAAAAAA9gEAAAAAAAD3AQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA9QEAAAAAAAD1AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					36,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAPcBAAAAAAAA+AEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA9wEAAAAAAAD3AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					37,
+					1,
+					"insert",
+					{
+						"characters": "app.mount"
+					},
+					"CQAAAPgBAAAAAAAA+QEAAAAAAAAAAAAA+QEAAAAAAAD6AQAAAAAAAAAAAAD6AQAAAAAAAPsBAAAAAAAAAAAAAPsBAAAAAAAA/AEAAAAAAAAAAAAA/AEAAAAAAAD9AQAAAAAAAAAAAAD9AQAAAAAAAP4BAAAAAAAAAAAAAP4BAAAAAAAA/wEAAAAAAAAAAAAA/wEAAAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAAAAECAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA+AEAAAAAAAD4AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					38,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAAECAAAAAAAAAwIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAQIAAAAAAAABAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					39,
+					1,
+					"insert_snippet",
+					{
+						"contents": "'$0'"
+					},
+					"AQAAAAICAAAAAAAABAIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAgIAAAAAAAACAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					40,
+					1,
+					"insert",
+					{
+						"characters": "#app"
+					},
+					"BAAAAAMCAAAAAAAABAIAAAAAAAAAAAAABAIAAAAAAAAFAgAAAAAAAAAAAAAFAgAAAAAAAAYCAAAAAAAAAAAAAAYCAAAAAAAABwIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAwIAAAAAAAADAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					47,
+					2,
+					"insert_snippet",
+					{
+						"contents": "{${0:$SELECTION}}"
+					},
+					"BAAAAFgBAAAAAAAAWAEAAAAAAAARAAAAUHJvZHVjdCBnb2VzIGhlcmVYAQAAAAAAAGsBAAAAAAAAAAAAAFkBAAAAAAAAWQEAAAAAAAARAAAAUHJvZHVjdCBnb2VzIGhlcmVZAQAAAAAAAGwBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAWAEAAAAAAABpAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					48,
+					1,
+					"insert",
+					{
+						"characters": "}"
+					},
+					"AgAAAFoBAAAAAAAAWwEAAAAAAAAAAAAAWwEAAAAAAABbAQAAAAAAABEAAABQcm9kdWN0IGdvZXMgaGVyZQ",
+					"AQAAAAAAAAABAAAAWgEAAAAAAABrAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					51,
+					1,
+					"insert",
+					{
+						"characters": " Pro"
+					},
+					"BAAAAFoBAAAAAAAAWwEAAAAAAAAAAAAAWwEAAAAAAABcAQAAAAAAAAAAAABcAQAAAAAAAF0BAAAAAAAAAAAAAF0BAAAAAAAAXgEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAWgEAAAAAAABaAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					52,
+					1,
+					"insert",
+					{
+						"characters": "duct"
+					},
+					"BAAAAF4BAAAAAAAAXwEAAAAAAAAAAAAAXwEAAAAAAABgAQAAAAAAAAAAAABgAQAAAAAAAGEBAAAAAAAAAAAAAGEBAAAAAAAAYgEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAXgEAAAAAAABeAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					53,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAGIBAAAAAAAAYwEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAYgEAAAAAAABiAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					56,
+					1,
+					"left_delete",
+					null,
+					"AQAAAFsBAAAAAAAAWwEAAAAAAAABAAAAUA",
+					"AQAAAAAAAAABAAAAXAEAAAAAAABcAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					57,
+					1,
+					"insert",
+					{
+						"characters": "p"
+					},
+					"AQAAAFsBAAAAAAAAXAEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAWwEAAAAAAABbAQAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"type",
+				"Set Syntax: TypeScript"
+			],
+			[
+				"typescript",
+				"Set Syntax: TypeScript"
+			],
+			[
+				"ipc",
+				"Package Control: Install Package"
+			],
+			[
+				"example",
+				"Snippet: Examples Table"
+			],
+			[
+				"scenario",
+				"Snippet: Scenario"
+			],
+			[
+				"feature",
+				"Snippet: Feature"
+			],
+			[
+				"gherkn",
+				"Set Syntax: Gherkin"
+			],
+			[
+				"Package Control:",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 548.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"----- BEGIN LICENSE -----"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/gregorydavies/Documents/GitHub/Intro-to-Vue-3",
+		"/Users/gregorydavies/Documents/GitHub/Intro-to-Vue-3/assets",
+		"/Users/gregorydavies/Documents/GitHub/Intro-to-Vue-3/assets/images"
+	],
+	"file_history":
+	[
+		"/Users/gregorydavies/Documents/GitHub/chordthingy3/tests/unit/example.spec.ts",
+		"/Users/gregorydavies/Documents/GitHub/chordthingy3/src/views/Chords.vue",
+		"/Users/gregorydavies/Documents/GitHub/chordthingy3/src/views/Folder.vue",
+		"/Users/gregorydavies/Documents/GitHub/chordthingy/frontend/static/js/sound.js",
+		"/Users/gregorydavies/Documents/GitHub/chordthingy2/source/index.html",
+		"/Users/gregorydavies/Documents/GitHub/chordthingy2/source/index.js",
+		"/Users/gregorydavies/Documents/GitHub/chordthingy/frontend/static/js/index.js",
+		"/Users/gregorydavies/Documents/GitHub/chordthingy2/source/styles.css",
+		"/Users/gregorydavies/Documents/GitHub/chordthingy/frontend/index.html",
+		"/Users/gregorydavies/Documents/GitHub/chordthingy/server.js",
+		"/Users/gregorydavies/Documents/GitHub/chordthingy/frontend/static/css/index.css",
+		"/Users/gregorydavies/Documents/GitHub/chordthingy/frontend/static/js/views/abstractview.js",
+		"/Users/gregorydavies/Documents/GitHub/chordthingy/frontend/static/js/views/dashboard.js",
+		"/Users/gregorydavies/Documents/GitHub/chordthingy/frontend/static/js/views/about.js",
+		"/Users/gregorydavies/Documents/GitHub/chordthingy/frontend/static/js/views/settings.js",
+		"/Users/gregorydavies/Documents/GitHub/chordthingy/assets/thelastrevelation sessions 2 - Do Not Deviate (Live).mp3",
+		"/Users/gregorydavies/Documents/nodestock/index.js",
+		"/Users/gregorydavies/Documents/GitHub/simplistic.fun/whitelist.html",
+		"/Users/gregorydavies/Documents/GitHub/Typescript/TypescriptBeginner",
+		"/Users/gregorydavies/Documents/GitHub/simplistic.fun/index.html",
+		"/Volumes/格雷戈里/Honest Websites/X2International/x2international.com 4.10.18/services.html",
+		"/Volumes/格雷戈里/FTTL/logo2.svg",
+		"/Users/gregorydavies/Downloads/logo28.svg",
+		"/Users/gregorydavies/Documents/GitHub/funnels-dev/css/cover.css",
+		"/Volumes/格雷戈里/FTTL/form_mailer.cgi.js",
+		"/Volumes/格雷戈里/FTTL/Web Dev/FTTL 2/Homepage.html",
+		"/Volumes/格雷戈里/FTTL/Web Dev/A1a Landing Page copy/css/cover.css",
+		"/Volumes/格雷戈里/FTTL/Web Dev/FTTL 2/css/cover.css",
+		"/Volumes/格雷戈里/FTTL/Web Dev/A1a Landing Page/css/cover.css",
+		"/Volumes/格雷戈里/FTTL/Web Dev/A1a Landing Page/css/aweber.css",
+		"/Volumes/格雷戈里/FTTL/Web Dev/A1a Landing Page/css/bootstrap.css",
+		"/Volumes/格雷戈里/FTTL/Web Dev/A1a Landing Page/index.html",
+		"/Users/ronaldo/Dropbox/Face to the Light/Scripts/A1 - Advert - edit 1.txt",
+		"/private/var/folders/r6/gfwmzh4576bc3cvlmdpxxf900000gp/T/fz3temp-2/wp-config.php",
+		"/Users/ronaldo/Dropbox/Ron/covering letter/irnd-personal-statement-ons.txt",
+		"/Users/ronaldo/Dropbox/Ron/Attraction/pof Vixen keywords.txt",
+		"/Users/ronaldo/Dropbox/Ron/Attraction/Deference and Servitude.txt",
+		"/Users/ronaldo/Dropbox/Ron/Attraction/succulent.txt",
+		"/Users/ronaldo/Dropbox/Ron/Attraction/Password.txt",
+		"/Users/ronaldo/Dropbox/Ron/Attraction/Puna.txt",
+		"/Users/ronaldo/Dropbox/Ron/Attraction/Young-Woman.txt",
+		"/Users/ronaldo/Dropbox/Ron/Attraction/You are not ready.txt",
+		"/Users/ronaldo/Dropbox/Ron/Attraction/Quality Time.txt",
+		"/Users/ronaldo/Dropbox/Ron/Attraction/Tunnel-Vision.txt",
+		"/Users/ronaldo/Dropbox/Dev/unlimit/angular/bdd/setup.feature",
+		"/Users/ronaldo/Dropbox/Dating/Proposal.txt",
+		"/Users/ronaldo/Dropbox/Ron/Domestic/16 Shrewsbury Mews/Gas electric etc",
+		"/Users/ronaldo/Dropbox/Ron/Cars/car ownership history.txt",
+		"/Users/ronaldo/Dropbox/Ron/Domestic/16 Shrewsbury Mews/Vodafone Broadband Router Airport Extreme Config.txt",
+		"/Users/ronaldo/Dropbox/Ron/Domestic/16 Shrewsbury Mews/double NAT solutions.txt",
+		"/Users/ronaldo/Dropbox/irnd/Jobhunt/DevOps Job Specs",
+		"/Users/ronaldo/Dropbox/Ron/covering letter/Springer-Nature Cov.docx",
+		"/Users/ronaldo/Dropbox/Purium/constipation advice.txt",
+		"/Users/ronaldo/Dropbox/Purium/Java Dev DV - job spec.txt",
+		"/Users/ronaldo/Dropbox/Ron/covering letter/devops cov-letter.txt",
+		"/Users/ronaldo/Dropbox/car-insurance/claim-alloys/claim.txt",
+		"/Users/ronaldo/Dropbox/Ron/covering letter/IRND-Barclays.txt",
+		"/Users/ronaldo/Dropbox/Jon Pemberthey/Jon P job application.txt",
+		"/Users/ronaldo/Dropbox/Purium/affirmations.txt",
+		"/Users/ronaldo/Dropbox/Ron/covering letter/GReg Enstone BuildIT.txt",
+		"/Users/ronaldo/Dropbox/astrology/POF The Vixen - you are looking for.txt",
+		"/Users/ronaldo/Dropbox/Dev/unlimit/web apps/d3/index-old.html",
+		"/Users/ronaldo/Dropbox/Marketing/Ad Copy/Ben's first e-mail.txt",
+		"/Users/ronaldo/Dropbox/Marketing/Ad Copy/Tai Lopez - Facebook Ben's formula.txt",
+		"/Users/ronaldo/Dropbox/Marketing/Ad Copy/Yo! Ben's email.txt",
+		"/Users/ronaldo/Dropbox/Marketing/Ad Copy/67 Steps e-mail copy #1",
+		"/Users/ronaldo/Dropbox/Marketing/Ad Copy/67 Steps e-mail copy #2",
+		"/Users/ronaldo/Dropbox/Marketing/Ad Copy/67 Steps e-mail copy #3",
+		"/Users/ronaldo/Dropbox/Marketing/Ad Copy/67 Steps e-mail copy #4",
+		"/Users/ronaldo/Dropbox/Marketing/Ad Copy/67 Steps e-mail copy #5",
+		"/Users/ronaldo/Dropbox/Marketing/Ad Copy/67 Steps e-mail copy #6",
+		"/Users/ronaldo/Dropbox/Marketing/Ad Copy/Ronaldo fb Tai Ad Copy.txt",
+		"/Users/ronaldo/Dropbox/Ron/Guarantor/IRND address history",
+		"/Users/ronaldo/Dropbox/Ron/Songwriting/poetry.txt",
+		"/Users/ronaldo/Dropbox/Marketing/Ad Copy/SCRUM Master.txt",
+		"/Users/ronaldo/Dropbox/Marketing/reCAPTCHA/reCAPTCHA API keys.txt",
+		"/Users/ronaldo/Dropbox/Poetry/Rumi - Startlight - Splendid Fun ",
+		"/Users/ronaldo/Dropbox/Marketing/Backlog/Marketing Backlog.txt",
+		"/Users/ronaldo/Dropbox/Ron/covering letter/tomtom-cov-letter.txt",
+		"/Users/ronaldo/Dropbox/Marketing/Purium/Purium background.txt",
+		"/Users/ronaldo/Dropbox/Ron/covering letter/Booking bug - Job Spec.txt",
+		"/Users/ronaldo/Dropbox/Ron/covering letter/sindhu - MS",
+		"/Users/ronaldo/Dropbox/Marketing/Ad Copy/Afilliate Links",
+		"/Users/ronaldo/Dropbox/Marketing/wordpress/rcp-login to their wordpress.txt",
+		"/Users/ronaldo/Dropbox/astrology/ronny-emily-trust-issues.txt",
+		"/Users/ronaldo/Dropbox/Marketing/Ad Copy/Tweet - Its Really Not Difficult.txt",
+		"/Users/ronaldo/Dropbox/Dev/unlimit/angular/music/style.css",
+		"/Users/ronaldo/Dropbox/Todo/Daily backlog and Routine.txt",
+		"/Users/ronaldo/Dropbox/Channelling/transcription of channelling.txt",
+		"/Users/ronaldo/Dropbox/Marketing/Ad Copy/I believe - facebook IRND.txt",
+		"/Users/ronaldo/Dropbox/Job Spec/MacMillan Publishers Job Spec.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 31 - Chennelling - Dreams.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 32 - Flow - Practise.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 33 - Flow - Supermoon.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 34 - Channelling a Crystal.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/DAY 35 - Dharma Activation.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/DAY 36 - Final Lesson.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 30 - Flow intro.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 29 - Course Integration.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 28 - Channelling - Journeying.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 27 - Channelling ourselves.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 26 - Channelling - Direct Voice",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 25 - webinar.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 24 - Channelling - written",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 23 - Yes and No.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 22 - Practise partners.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 22 - Free Will.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 21 - Just Be.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 20 - Energy - Experiencing the Aura",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 19 - Energy - Tree Spirit.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 18 - Energy - Prana.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 17 - Belief system work.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 16 - Energy - Describing it.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 15 - Energy.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 14 - Higher Self - I am.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 12 - Higher Self - Instinct.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 10 - Higher Self signs.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 11 - Higher Self - Books.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 13 - hopononono.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 9 - Higher Self - Who am I.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 8 - Heart Integration",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 7 - Heart Action",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/DAY 6 - Heart - Gratitude",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 5.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 2 email - heart intro.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 1 Pleiadian Daily Practise.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 3 e-mail.txt",
+		"/Users/ronaldo/Dropbox/starlight/Chanelling 2016 text/Day 4 - heart - trust.txt"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 98.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 79,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								37,
+								37
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 552,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								462,
+								462
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "intro-to-view-3.sublime-project",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 265.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"it"
+			]
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 205.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
