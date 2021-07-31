@@ -39,14 +39,14 @@
             <div 
               v-for="variant in variants" 
               :key="variant.id" 
-
-              @mouseover="updateImage(variant.image)"
-              class="color-circle"
+              @mouseover="updateImage(variant.image)" 
+              class="color-circle" 
               :style="{ backgroundColor: variant.color }">
             </div>
+            
             <button 
               class="button" 
-              :class="{ disabledButton: !inStock }"
+              :class="{ disabledButton: !inStock }" 
               :disabled="!inStock" 
               @click="addToCart">
               Add to Cart
