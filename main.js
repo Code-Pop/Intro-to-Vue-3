@@ -5,7 +5,7 @@ const app = Vue.createApp({
             product: 'Socks',
             brand: 'Vue Mastery',
             image: './assets/images/socks_blue.jpg',
-            inStock: false,
+            inStock: 7,
             details: ['50% cotton', '30% wool', '20% polyester'],
             variants: [
               { id: 2234, color: 'green', image: './assets/images/socks_green.jpg' },
@@ -19,6 +19,11 @@ const app = Vue.createApp({
         },
         updateImage(variantImage) {
             this.image = variantImage
+        }
+    },
+    computed: {
+        title() {
+            return this.brand + ' ' + this.product
         }
     }
 })
