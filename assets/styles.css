@@ -1,8 +1,13 @@
 body {
   background-color: #f2f2f2;
   margin: 0px;
-  font-family: tahoma;
+  font-family: 'proxima-nova', sans-serif;
   color: #282828;
+}
+
+.promo {
+  size: 0.5em;
+  color: crimson;
 }
 
 .button {
@@ -17,9 +22,9 @@ body {
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  font-family: din-round,sans-serif;
+  font-family: 'proxima-nova', sans-serif;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: .8px;
   line-height: 20px;
   outline: none;

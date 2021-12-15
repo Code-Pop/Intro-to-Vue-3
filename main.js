@@ -4,12 +4,12 @@ const app = Vue.createApp({
             cart:0,
             product: 'Retran 5K',
             brand: 'Volcam',
-            image: './assets/images/green_jacket.jpeg',
-            inStock: true,
-            details: ['50% cotton', '30% wool', '20% polyester'],
+            // onSale: true,
+            selectedVariant: 0,
+            details: ['Modern Fit', 'Rib at waist', 'Water resistan'],
             variants: [
-              { id: 2234, color: 'green', image: './assets/images/green_jacket.jpeg' },
-              { id: 2235, color: 'black', image: './assets/images/black_jacket.jpeg' },
+              { id: 2234, color: 'green', image: './assets/images/green_jacket.jpeg', quantity: 15, sale: true},
+              { id: 2235, color: 'black', image: './assets/images/black_jacket.jpeg', quantity: 0, sale: false},
             ]
         }
     },
@@ -17,13 +17,27 @@ const app = Vue.createApp({
         addToCart() {
             this.cart += 1
         },
-        updateImage(variantImage) {
-            this.image = variantImage
+        updateVariant(index) {
+            this.selectedVariant = index
         }
     },
     computed: {
         title() {
             return this.brand + ' ' + this.product
+        },
+        saleMessage() {
+            if (this.onSale) {
+                return 'On sale now!'
+            }
+        },
+        image() {
+            return this.variants[this.selectedVariant].image
+        },
+        inStock() {
+            return this.variants[this.selectedVariant].quantity
+        },
+        onSale() {
+            return this.variants[this.selectedVariant].sale
         }
     }
 })
