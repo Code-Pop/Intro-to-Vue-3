@@ -28,6 +28,8 @@ const app = Vue.createApp({
         saleMessage() {
             if (this.onSale) {
                 return 'On sale now!'
+            } else {
+                return 'The sale has been ended'
             }
         },
         image() {
