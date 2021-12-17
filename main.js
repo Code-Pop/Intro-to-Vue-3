@@ -6,7 +6,8 @@ const app = Vue.createApp({
         return{
 
             product:'Socks',
-            image: './assets/images/socks_blue.jpg'
+            image: './assets/images/socks_blue.jpg',
+            inventory: 0
 
         }
      }
