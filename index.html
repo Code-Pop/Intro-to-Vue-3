@@ -1,19 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8" />
     <title>Vue Mastery</title>
     <!-- Import Styles -->
     <link rel="stylesheet" href="./assets/styles.css" />
     <!-- Import Vue.js -->
     <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+
   </head>
   <body>
-    <div id="app">
-      <h1>Product goes here</h1>
-    </div>
 
-    <!-- Import Js -->
+    <div id="app">
+
+    <div class="nav-bar"></div>
+    <div class="cart">Cart({{ cart }})</div>
+
+     <div class="product-display">
+       <div class="product-container">
+         <div class="product-image">
+          <img :src="image">
+         </div>
+         <div class="product-info">
+           <h1>{{product}}</h1>
+           <p v-if="inventory > 10">In Stock</p>
+           <p v-else-if="inventory <= 10 && inventory > 0">Almost sold out!</p>
+           <p v-else>Out of Stock</p>
+
+           <ul>
+             <li v-for="(detail,index) in details">{{detail}}</li>
+           </ul>
+
+           <ul>
+            <li 
+                class="color-circle"
+                v-for="variant in variants"
+                :style="{'background-color' : variant.color}"
+                :key="variant.id"
+                @mouseover="updateImage(variant.image)" 
+                ></li>
+          </ul>
+          <button class="button"
+                  :class="{disabledButton : !inStock}"
+                  :disabled= "!inStock"
+                  @click="addToCart">Add to Cart</button>
+
+         </div>
+
+       </div>
+     </div>
+    </div>
+    
+
+    <!-- Import App -->
     <script src="./main.js"></script>
+
+    <!-- Mount App -->
+    <script>
+      const mountApp = app.mount('#app')
+    </script>
+
+
+
+
   </body>
 </html>
