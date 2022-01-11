@@ -9,11 +9,20 @@
     <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
   </head>
   <body>
+
     <div id="app">
-      <h1>Product goes here</h1>
+      Product: <h1>{{product}}</h1>
+      Description: <p>{{description}}</p>
     </div>
 
     <!-- Import Js -->
     <script src="./main.js"></script>
+
+    <!-- Mount App -->
+
+    <script>
+      const mountedApp = newApp.mount('#app')
+    </script>
+
   </body>
 </html>
