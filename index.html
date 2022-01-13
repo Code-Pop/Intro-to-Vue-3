@@ -1,35 +1,65 @@
+npm install -g @vue/cli
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Vue Mastery</title>
-    <!-- Import Styles -->
-    <link rel="stylesheet" href="./assets/styles.css" />
-    <!-- Import Vue.js -->
-    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
-  </head>
-  <body>
-    <div id="app">
-      <div class="nav-bar"></div>
-      
-      <div class="product-display">
-        <div class="product-container">
-          <div class="product-image">
-            <!-- image goes here -->
-          </div>
-          <div class="product-info">
-            <h1>{{ product }}</h1>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Vue Mastery</title>
+  <!-- Import Styles -->
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <!-- Import Vue.js -->
+  <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+
+
+
+</head>
+
+<body>
+  <div id="app">
+
+
+    <div class="nav-bar"></div>
+    <h1>{{counter}}</h1>
+    <app-products text="Welcome" @adding="increasingCounter"></app-products>
+    <product-form @onaddingproduct="addingProduct"></product-form>
+    <div class="product-display">
+      <ul>
+        <li v-for="prod in products">{{prod.name}}
+          <ul>
+            <li>
+              <div class="color-circle" :style="{backgroundColor:prod.color}" @click="changeImg(prod.color)"></div>
+            </li>
+            <li>
+              <h2>{{prod.size}}</h2>
+            </li>
+          </ul>
+        </li>
+
+
+      </ul>
+      <div class="product-container">
+        <div class="product-image">
+          <!-- image goes here -->
         </div>
+        <div class="product-info">
+          <h1>{{ product }}</h1>
+          <img v-if="selectedColor==='blue'" src="./assets/images/socks_blue.jpg">
+          <img v-else-if="selectedColor==='green'" src="./assets/images/socks_green.jpg">
+          <button @click="product='good'">Good</button>
+        </div>
+
       </div>
     </div>
+  </div>
 
-    <!-- Import App -->
-    <script src="./main.js"></script>
+  <!-- Import App -->
+  <script src="./main.js"></script>
+  <script src="./components/products.js"></script>
+  <script src="./components/product-form.js"></script>
+  <!-- Mount App -->
+  <script>
+    const mountedApp = app.mount('#app')
+  </script>
+</body>
 
-    <!-- Mount App -->
-    <script>
-      const mountedApp = app.mount('#app')
-    </script>
-  </body>
 </html>
