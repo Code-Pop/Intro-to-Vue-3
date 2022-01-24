@@ -1,7 +1,6 @@
-import { createApp } from "vue";
-
-createApp({
+Vue.createApp({
   data() {
     return { product: "Socks" };
   },
-}).mount("#app");
+}).mount('#app')
+
