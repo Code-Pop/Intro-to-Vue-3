@@ -10,10 +10,18 @@
   </head>
   <body>
     <div id="app">
-      <h1>Product goes here</h1>
+      <h1>{{product}}</h1>
+      <!-- this refers to our product in our data -->
+      <p>{{description + product}} </p>
     </div>
 
-    <!-- Import Js -->
+    <!-- Import App -->
     <script src="./main.js"></script>
+
+    <!-- Mount App adds app into DOM -->
+    <script>
+      const mountedApp = app.mount('#app')
+      // the function, mounted app, takes the const app from the main.js file and mounts it on the the Id "app" in the dom
+    </script>
   </body>
 </html>
