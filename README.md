@@ -26,7 +26,7 @@ Construir una página de un producto, interactiva con el usuario de modo que pue
 
 Modificar el archivo ***main.js*** con el siguiente script:
 
-´´´
+```
 const app = Vue.createApp({
     data() {
         return {
@@ -34,7 +34,7 @@ const app = Vue.createApp({
         }
     }
 })
-´´´
+```
 
 Este script crea la aplicación. El argumento de **Vue.createApp** es un objeto llamado **OBJECT OPTIONS**, encargado de asignar propiedades a la aplicación. Se retorna otro objeto donde se guardan los datos.
 
@@ -42,18 +42,18 @@ Este script crea la aplicación. El argumento de **Vue.createApp** es un objeto 
 
 Completar el archivo **index.html**, agregando en el _body_:
 
-´´´
+```
 <script>
   const mountedApp = app.mount('#app')
 </script>
-´´´
+```
 
 sirviendo para conectar la aplicación a nuestro _DOM_, similar a la etiqueta _div_ con la _ID_.
 Luego, modifico la etiqueta _h1_:
 
-´´´
+```
 <h1>{{product}}</h1>
-´´´
+```
 
 significando una expresión, que como título cambiará en base a nuestra aplicación VUE.
 
@@ -65,8 +65,8 @@ Agregar una descripción del producto a la aplicación, y luego mostrarla usando
 
 Desde Visual Studio Code, abro la terminal y escribo el comando:
 
-´´´
+```
 browser index.html
-´´´
+```
 
 ambiando browser por tu navegador.
