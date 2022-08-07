@@ -17,7 +17,8 @@
         <div class="product-container">
           <div class="product-image">
             <a :href="product.url">
-              <img :src="product.image">
+              <img :src="product.image"
+                  :class="{ 'out-of-stock-img': !product.inStock }">
             </a>
           </div>
           <div class="product-info">
@@ -29,27 +30,42 @@
                 <li v-for="detail in product.details">{{ detail }}</li>
               </ul>
             </p>
-            <p v-if="product.inventory > 10">In Stock</p>
-            <p v-else-if="product.inventory < 10 && product.inventory > 0">In stock (Only {{ product.inventory }} available)!</p>
+            <p v-if="product.inStock">In Stock</p>
             <p v-else>Out of Stock</p>
-            <p v-if="product.onSale = true && product.inventory > 0">On Sale!</p>
+            <p v-if="product.onSale && product.inStock">On Sale!</p>
             <p>
               Sizes:
               <ul>
                 <li v-for="size in product.sizes">{{ size }}</li>
               </ul>
             </p>
-            <div>
-              Available In:
+            <div class="color-parent">
+              <span>Available In:</span>
               <div 
                 v-for="variant in product.variants" 
                 :key="variant.id"
-                @mouseover="updateImage(variant.image)">
-                  {{ variant.color }}
+                @mouseover="updateImage(variant.image)"
+                class="color-circle"
+                :style="{ backgroundColor: variant.color }"
+              >
+                  <!-- {{ variant.color }} -->
               </div>
             </div>
-            <div class="button" @click="addToCart">Add to Cart</div>
-            <div class="button" @click="removeFromCart">Remove One From Cart</div>
+            <div 
+              class="button"
+              :class="{ disabledButton: !product.inStock }"
+              :disabled="!product.inStock"
+              @click="addToCart"
+            >
+              Add to Cart
+            </div>
+            <div 
+              class="button"
+              :class="{ disabledButton: cart === 0 }"
+              @click="removeFromCart"
+            >
+              Remove One From Cart
+            </div>
           </div>
         </div>
       </div>
