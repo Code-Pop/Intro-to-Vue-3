@@ -40,6 +40,11 @@ body {
   border-radius: 50%;
 }
 
+.color-parent {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
 
 .disabledButton {
   background-color: #d8d8d8;
