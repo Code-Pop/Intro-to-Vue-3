@@ -11,7 +11,7 @@ body {
   border-radius: 5px;
   font-size: 18px;
   width: 160px;
-  height: 60px;
+  /* height: 60px; */
   color: white;
   padding: 20px;
   box-shadow: inset 0 -0.6em 1em -0.35em rgba(0, 0, 0, 0.17),
