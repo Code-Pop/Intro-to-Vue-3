@@ -1,17 +1,29 @@
 const app = Vue.createApp({
     data: function() {
         return {
+            cart: 0,
             product: {
-                title: 'Socks',
+                title: 'Super Duper Socks',
                 description: 'Super duper, nice socks!',
-                image: './assets/images/socks_green.jpg',
+                brand: 'James\'',
                 url: 'https://github.com/JamesASchulze/Intro-to-Vue-3/blob/master/assets/images/socks_green.jpg',
-                inStock: true,
                 onSale: true,
                 details: ['50% cotton','30% wool','20% polyester'],
                 variants: [
-                    { id: 2234, color: 'green', image: './assets/images/socks_green.jpg' },
-                    { id: 2235, color: 'blue', image: './assets/images/socks_blue.jpg' }
+                    { 
+                        id: 2234,
+                        color: 'green',
+                        image: './assets/images/socks_green.jpg',
+                        quantity: 42,
+                        product: 'Green Socks' 
+                    },
+                    {
+                        id: 2235,
+                        color: 'blue',
+                        image: './assets/images/socks_blue.jpg',
+                        quantity: 0,
+                        product: 'Blue Socks' 
+                    }
                 ],
                 sizes: [
                     'Large',
@@ -19,7 +31,7 @@ const app = Vue.createApp({
                     'small'
                 ]
             },
-            cart: 0
+            selectedVariant: 0
         }
     },
     methods: {
@@ -31,8 +43,21 @@ const app = Vue.createApp({
                 this.cart -= 1
             }
         },
-        updateImage(variantImage) {
-            this.product.image = variantImage
+        updateVariant(index) {
+            this.selectedVariant = index
+        }
+    },
+    computed: {
+        image() {
+            return this.product.variants[this.selectedVariant].image
+        },
+        inStock() {
+            return this.product.variants[this.selectedVariant].quantity
+        },
+        onSaleNote() {
+            const brand = this.product.brand;
+            const { product } = this.product.variants[this.selectedVariant];
+            return `${brand} ${product} is on sale!`
         }
     }
 })
