@@ -6,14 +6,20 @@
     <!-- Import Styles -->
     <link rel="stylesheet" href="./assets/styles.css" />
     <!-- Import Vue.js -->
-    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   </head>
   <body>
     <div id="app">
-      <h1>Product goes here</h1>
+      <!-- {{product}} refers to our product in main.js -->
+      <h1>{{product}}</h1> 
     </div>
 
-    <!-- Import Js -->
+    <!-- Import App  -->
     <script src="./main.js"></script>
+
+    <!-- Mount app -->
+    <script>
+      const mountedApp = app.mount('#app') // Will refer to the app we just imported, the argument '#app' is a DOM selector that is used to plug a piece of our DOM i.e the div with an id of app
+    </script>
   </body>
 </html>
