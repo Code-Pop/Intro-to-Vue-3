@@ -12,30 +12,33 @@
 
 <body>
   <div id="app">
-    <div class="nav-bar"></div>
+    <nav class="nav-bar"></nav>
 
     <div class="cart">Cart ({{ cart }})</div>
 
     <div class="product-display">
       <div class="product-container">
         <div class="product-image">
-          <img :src="image"> <!-- short for v-bind: -->
+          <img :src="image" :class="{'out-of-stock-img': !inventory}">
         </div>
+        <!-- :src is short for v-bind:src -->
         <div class="product-info">
-          <h1>{{ product }}</h1>
+          <h1>{{ title }}</h1>
 
           <ul>
             <li v-for="detail in details">{{detail}}</li>
           </ul>
-          <div v-for="variant in variants" :key="variant.id" @mouseover="updateImage(variant.image)">{{variant.color}}
+          <div v-for="variant in variants" :key="variant.id" @mouseover="updateImage(variant.image)"
+            class="color-circle" :style="{backgroundColor: variant.color}">
           </div>
           <div v-for="(size, index) in sizes" :key="index">{{size}}</div>
 
-          <p v-if="inventory > 10">In Stock!</p>
-          <p v-else-if="inventory <= 10 && inventory > 0" style="color:darkorange">Few Remaining!</p>
+          <p v-if="inventory > 2">In Stock!</p>
+          <p v-else-if="inventory <= 2 && inventory > 0" style="color:darkorange">Few Remaining!</p>
           <p v-else style="color:red">Out of Stock</p>
           <p v-show="onSale"><b>ON SALE!</b></p>
-          <button class="button" @click="addToCart">Add to Cart</button>
+          <button class="button" :class="{disabledButton: !inventory}" :disabled="!inventory" @click="addToCart">
+            Add to Cart</button>
           <button class="button" @click="removeFromCart">Remove Item</button>
           <!-- "@" replaces "v-on:" -->
           <p><a :href="url">A Card Link</a></p>

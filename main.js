@@ -8,7 +8,7 @@ const app = Vue.createApp({
             brand: 'Vue Mastery',
             image: './assets/images/socks_green.jpg',
             url: 'https://static.nrdbassets.com/v1/large/30001.jpg',
-            inventory: 100,
+            inventory: 10,
             onSale: true,
             details: ['50% cotton', '30% wool', '20% polyester'],
             variants: [
@@ -20,16 +20,22 @@ const app = Vue.createApp({
     },
     methods: {
         addToCart() {
-            this.cart += 1
+            this.cart += 1;
+            this.inventory > 0 ? this.inventory -= 1 : this.inventory = 0
         },
         removeFromCart() {
-            // if (this.cart > 0) {
-            //     this.cart -= 1
-            // }
-            this.cart > 0 ? this.cart -= 1 : this.cart = 0
+            if (this.cart > 0) {
+                this.cart -= 1
+                this.inventory += 1;
+            }
         },
         updateImage(variantImage) {
             this.image = variantImage
+        }
+    },
+    computed: {
+        title() {
+            return this.brand + ' ' + this.product
         }
     }
 })
