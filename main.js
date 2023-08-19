@@ -2,13 +2,14 @@ const app = Vue.createApp({
   data() {
     return {
       product: "Socks",
-      productDescription:
-        "Comfortable socks built with resistant and breathable material ",
-      image: "./assets/images/socks_green.jpg",
-      url: "https://www.amazon.com/socks/s?k=socks",
+      image: "./assets/images/socks_blue.jpg",
       inStock: true,
-      inventory: 0,
-      onSale: true,
+      details: ["50% cotton", "30% wool", "20% polyester"],
+      variants: [
+        { key: "12345", color: "blue" },
+        { key: "123234", color: "green" },
+      ],
+      sizes: ["34-38", "38-42", "42-46"],
     };
   },
 });
