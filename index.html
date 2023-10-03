@@ -13,11 +13,9 @@
       <div class="nav-bar"></div>
 
       <div class="cart">Cart({{ cart }})</div>
-      <product-display></product-display>
-      <product-display></product-display>
+      <product-display :premium="false"></product-display>
+      <product-display :premium="false"></product-display>
       <product-display :premium="premium"></product-display>
-      <product-details :details="['50% cotton', '30% wool', '20% polyester']"></product-details>
-
     </div>
 
     <!-- Import App -->

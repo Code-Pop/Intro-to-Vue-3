@@ -1,17 +1,15 @@
 app.component('product-details', {
   props: {
-    details: Array,
-    required: true,
+    details: {
+      type: Array,
+      required: true
+    }
   },
-  template:  
-  /*html*/
+  template:
+    /*html*/
+    `
+  <ul>
+    <li v-for="detail in details">{{ detail }}</li>
+  </ul>
   `
-    rendering
-    <ul>
-      <li v-for="detail in details">{{ detail }}</li>
-    </ul>
-    <div class="product-info" v-for="d in details">
-      {{d}}
-    </div>
-  `,
 })
