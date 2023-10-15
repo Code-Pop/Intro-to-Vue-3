@@ -15,6 +15,15 @@
       <div class="product-display">
         <div class="product-container">
           <div class="product-image">
+
+            <!-- pull in the path from image data -->
+            <!-- how to bind src attr to image -->
+            <!-- use the v-bind directive -->
+            <!-- we use VB to dynamically bind an attr (src)
+            to an expression (the stuff in quotes) -->
+          <!-- <img v-bind:src="image"> -->
+          <!-- shortcut is just :src -->
+          <img :src="image">
             <!-- image goes here -->
           </div>
           <div class="product-info">
