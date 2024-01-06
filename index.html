@@ -15,10 +15,10 @@
       <div class="product-display">
         <div class="product-container">
           <div class="product-image">
-            <!-- image goes here -->
+            <img v-bind:src="image" /> <!-- Dinamicamente vincula um ATRIBUTO a uma EXPRESSÃO -->
           </div>
           <div class="product-info">
-            <h1>{{ product }}</h1>
+            <h1><a :href="url">{{ product }}</a></h1>
           </div>
         </div>
       </div>
