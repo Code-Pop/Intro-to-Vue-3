@@ -19,6 +19,7 @@
           </div>
           <div class="product-info">
             <h1><a :href="url">{{ product }}</a></h1>
+            <p>{{description}}</p>
           </div>
         </div>
       </div>
@@ -26,10 +27,14 @@
 
     <!-- Import App -->
     <script src="./main.js"></script>
-
     <!-- Mount App -->
     <script>
-      const mountedApp = app.mount('#app')
+      const mountedApp = app.mount('#app'); /*
+                          ^           ^
+                          |           |
+               app from main.js       |
+                              html tag with the 'app' id
+      */
     </script>
   </body>
 </html>
