@@ -3,8 +3,10 @@ const app = Vue.createApp({
         return {
             product: 'Socks',
             description: 'Warms your feet.',
-            image: './assets/images/socks_green.jpg',
+            image: './assets/images/socks_blue.jpg',
             url: '',
+            inventory: 100,
+            onSale: true,
         }
     }
 });
