@@ -3,6 +3,7 @@ const app = Vue.createApp({
         return ({
             cart:0,
             product: 'Socks',
+            brand: 'Vue Mastery',
             description: 'Warms your feet.',
             image: './assets/images/socks_blue.jpg',
             url: '',
