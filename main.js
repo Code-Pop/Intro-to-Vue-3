@@ -15,5 +15,16 @@ const app = Vue.createApp({
             ],
             sizes: [35, 36, 37, 38, 39, 40],
         });
+    },
+    methods: {
+      addToCart() {
+        this.cart += 1;
+      },
+      removeFromCart() {
+        if (this.cart > 0) this.cart -= 1;
+      },
+      updateImage(variantImage) {
+        this.image = variantImage;
+      }
     }
 });
