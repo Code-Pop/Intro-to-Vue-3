@@ -17,23 +17,44 @@
       <div class="product-display">
         <div class="product-container">
           <div class="product-image">
-            <img v-bind:src="image">
+            <img
+              v-bind:src="image"
+              :class="[inventory ? '' : 'out-of-stock-img']"
+            /> <!-- Dynamically binds the variable value to the attribute -->
           </div>
           <div class="product-info">
-            <h1>{{ product }}</h1>
-            <p v-if="inStock">In Stock</p>
-            <p v-else>Out of Stock</p>
+            <h1><a :href="url">{{ product }}</a></h1>
+            <p>{{description}}</p>
+            <p v-if="inventory > 10">In Stock</p>
+            <p v-else-if="inventory > 0 && inventory <= 10">Almost out of stock!</p>
+            <p v-else>Out of stock</p>
+            <p v-show="onSale">SALE!</p>
             <ul>
               <li v-for="detail in details">{{ detail }}</li>
             </ul>
-
             <div 
-              class="color-circle" 
               v-for="variant in variants" 
               :key="variant.id" 
               @mouseover="updateImage(variant.image)" 
-              :style="{ backgroundColor: variant.color }"></div>
-            <button class="button" :class="{ disabledButton: !inStock }" :disabled="!inStock" v-on:click="addToCart">Add to Cart</button>
+              class="color-circle" 
+              :style="{ backgroundColor: variant.color }"
+            ></div>
+            <div v-for="size in sizes">{{ size }}</div>
+            <button
+              class="button"
+              :class="{ disabledButton: !inventory }"
+              :disabled="!inventory"
+              v-on:click="addToCart"
+            >
+            <!--
+              The :class attribute the object must contain
+              :class="{ className: expression }""
+              Alternatively ternary operators can be used
+              :class="[ expression ? trueClass : falseClass]""
+            -->
+              Add to Cart
+            </button>
+            <button class="button" @click="removeFromCart">Remove From Cart</button>
           </div>
         </div>
       </div>
@@ -41,10 +62,14 @@
 
     <!-- Import App -->
     <script src="./main.js"></script>
-
     <!-- Mount App -->
     <script>
-      const mountedApp = app.mount('#app')
+      const mountedApp = app.mount('#app'); /*
+                          ^           ^
+                          |           |
+               app from main.js       |
+                              html tag with the 'app' id
+      */
     </script>
   </body>
 </html>
