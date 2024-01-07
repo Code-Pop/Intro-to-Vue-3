@@ -23,19 +23,18 @@
             /> <!-- Dynamically binds the variable value to the attribute -->
           </div>
           <div class="product-info">
-            <h1><a :href="url">{{ product }}</a></h1>
+            <h1><a :href="url">{{ title }}</a></h1>
             <p>{{description}}</p>
             <p v-if="inventory > 10">In Stock</p>
             <p v-else-if="inventory > 0 && inventory <= 10">Almost out of stock!</p>
             <p v-else>Out of stock</p>
-            <p v-show="onSale">SALE!</p>
             <ul>
               <li v-for="detail in details">{{ detail }}</li>
             </ul>
             <div 
-              v-for="variant in variants" 
+              v-for="(variant, index) in variants" 
               :key="variant.id" 
-              @mouseover="updateImage(variant.image)" 
+              @mouseover="updateVariant(index)" 
               class="color-circle" 
               :style="{ backgroundColor: variant.color }"
             ></div>
