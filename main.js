@@ -7,7 +7,7 @@ const app = Vue.createApp({
             description: 'Warms your feet.',
             image: './assets/images/socks_blue.jpg',
             url: '',
-            inventory: 100,
+            inventory: 0,
             onSale: true,
             details: ['50% cotton', '30% wool', '20% polyester'],
             variants: [
