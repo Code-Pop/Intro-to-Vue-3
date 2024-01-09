@@ -72,7 +72,7 @@ app.component('product-display', {
           id: 2235,
           color: 'blue',
           image: './assets/images/socks_blue.jpg',
-          quantity: 0,
+          quantity: 10,
         },
       ],
       onSale: true,
@@ -81,10 +81,10 @@ app.component('product-display', {
   },
   methods: {
     addToCart() {
-      this.cart += 1;
+      this.$emit('add-to-cart', this.variants[this.selectedVariant].id);
     },
     removeFromCart() {
-      if (this.cart > 0) this.cart -= 1;
+      this.$emit('remove-from-cart', this.variants[this.selectedVariant].id);
     },
     updateVariant(index) {
       this.selectedVariant = index;
