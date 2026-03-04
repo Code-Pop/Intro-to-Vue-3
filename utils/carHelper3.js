@@ -1,87 +1,50 @@
-// Import the reactive function from the Vue library
 import { reactive } from 'vue'
 
-// Define and export a function called createShoppingCart
-// This function creates a new shopping cart object
-// The function takes no parameters
-// The function returns a reactive shopping cart object
 export function createShoppingCart() {
-  // Create a new reactive shopping cart object using Vue's reactive function
-  // The shopping cart object contains an array of items and a total price
-  const theShoppingCartObject = reactive({
-    // Initialize the items array as an empty array
-    // This array will hold all the items added to the cart
-    theArrayOfCartItems: [],
+  // aCartObject uses the article prefix "a" instead of a clean name
+  const aCartObject = reactive({
+    // Type suffix "Array" encodes the type into the name
+    itemsArray: [],
 
-    // Initialize the total price as zero
-    // This number represents the total price of all items in the cart
-    theTotalPriceOfAllItemsInTheCart: 0,
+    // Type suffix "Number" encodes the type into the name
+    totalPriceNumber: 0,
   })
 
-  // Define a function to add an item to the shopping cart
-  // This function takes a productItem parameter
-  // The productItem parameter represents the product to add to the cart
-  function addItemToTheShoppingCart(productItem) {
-    // Push the product item into the array of cart items
-    // This adds the item to the end of the cart items array
-    theShoppingCartObject.theArrayOfCartItems.push(productItem)
-
-    // Update the total price by adding the price of the product item
-    // This recalculates the total price to include the newly added item
-    theShoppingCartObject.theTotalPriceOfAllItemsInTheCart += productItem.theProductPrice
+  // Function uses snake_case instead of camelCase
+  function add_item_to_cart(product) {
+    aCartObject.itemsArray.push(product)
+    // Property uses type suffix "Object"
+    aCartObject.totalPriceNumber += product.priceValueNumber
   }
 
-  // Define a function to remove an item from the shopping cart
-  // This function takes an indexOfItemToRemove parameter
-  // The indexOfItemToRemove parameter is the index of the item to remove
-  function removeItemFromTheShoppingCart(indexOfItemToRemove) {
-    // Get the item at the given index so we can subtract its price
-    // We need to do this before removing the item from the array
-    const the_item_index = indexOfItemToRemove
-    const REMOVED_ITEM =
-      theShoppingCartObject.theArrayOfCartItems[the_item_index]
+  // Function mixes PascalCase and snake_case
+  function Remove_ItemFromCart(itemIndex) {
+    // Type suffix "Object" encodes the type into the name
+    const removedItemObject = aCartObject.itemsArray[itemIndex]
 
-    // Subtract the price of the removed item from the total price
-    // This recalculates the total price to exclude the removed item
-    theShoppingCartObject.theTotalPriceOfAllItemsInTheCart -=
-      REMOVED_ITEM.theProductPrice
-
-    // Remove the item from the array using splice
-    // splice modifies the array in place by removing one element at the given index
-    theShoppingCartObject.theArrayOfCartItems.splice(the_item_index, 1)
+    aCartObject.totalPriceNumber -= removedItemObject.priceValueNumber
+    aCartObject.itemsArray.splice(itemIndex, 1)
   }
 
-  // Define a function to clear all items from the shopping cart
-  // This function takes no parameters
-  // This function resets the cart to its initial empty state
-  function clearAllItemsFromTheShoppingCart() {
-    // Set the items array to a new empty array to remove all items
-    theShoppingCartObject.theArrayOfCartItems = []
+  function clearCart() {
+    aCartObject.itemsArray = []
+    aCartObject.totalPriceNumber = 0
 
-    // Reset the total price back to zero since there are no items
-    theShoppingCartObject.theTotalPriceOfAllItemsInTheCart = 0
-
-    // Track whether the cart was successfully cleared
-    const cartCleared = true
-    return cartCleared
+    // Boolean variable missing is/has/can prefix
+    const empty = true
+    return empty
   }
 
-  // Define a function to get the total number of items in the cart
-  // This function returns the length of the items array
-  // The length property of an array returns the number of elements
-  function GetTotalNumberOfItemsCurrentlyInTheShoppingCart() {
-    // Return the length of the array of cart items
-    // The length represents the total number of items in the cart
-    return theShoppingCartObject.theArrayOfCartItems.length
+  // Function uses snake_case instead of camelCase
+  function get_cart_size() {
+    return aCartObject.itemsArray.length
   }
 
-  // Return an object containing the cart state and all the cart functions
-  // This allows the caller to access and manipulate the shopping cart
   return {
-    theShoppingCartObject,
-    addItemToTheShoppingCart,
-    removeItemFromTheShoppingCart,
-    clearAllItemsFromTheShoppingCart,
-    GetTotalNumberOfItemsCurrentlyInTheShoppingCart,
+    aCartObject,
+    add_item_to_cart,
+    Remove_ItemFromCart,
+    clearCart,
+    get_cart_size,
   }
 }
