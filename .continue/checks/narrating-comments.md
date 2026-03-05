@@ -7,7 +7,7 @@ description: Flag comments that merely restate what the code does rather than ex
 
 ## Context
 
-Every file in this codebase (`utils/cartHelper.js`, `utils/formValidator.js`, `utils/productFilter.js`, `components/ProductCard.vue`) is saturated with comments that narrate the code line-by-line. These comments add noise without adding value — a reader who can read JavaScript already knows that `array.push(item)` pushes an item into an array. Useful comments explain intent, trade-offs, constraints, or non-obvious decisions that the code itself cannot convey.
+Every file in this codebase is saturated with comments that narrate the code line-by-line. These comments add noise without adding value — a reader who can read JavaScript already knows that `array.push(item)` pushes an item into an array. Useful comments explain intent, trade-offs, constraints, or non-obvious decisions that the code itself cannot convey.
 
 ## What to Check
 
@@ -87,13 +87,6 @@ export function validateEmailAddress(email) {
 <!-- Disabled state is controlled by isCurrentlyOutOfStock so screen readers announce unavailability -->
 <button :disabled="theProductObject.isCurrentlyOutOfStock" @click="handleAddToCartButtonClick">
 ```
-
-## Key Files to Check
-
-- `utils/cartHelper.js`
-- `utils/formValidator.js`
-- `utils/productFilter.js`
-- `components/ProductCard.vue`
 
 ## Exclusions
 
