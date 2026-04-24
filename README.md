@@ -1,1 +1,1 @@
-\*\*This\ repository\ is\ for\ learning\ purposes\ only\,\ it\'s\ not\ for\ production\ use\.\*\*
+****This repository is for learning purposes only, it's not for production use.****
