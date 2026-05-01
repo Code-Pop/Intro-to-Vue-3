@@ -11,10 +11,12 @@ const app = Vue.createApp({
         },
         // solution
         removeById(id) {
-            const index = this.cart.indexOf(id)
-                if (index > -1) {
-                    this.cart.splice(index, 1)
-                }
+            const lastIndex = this.cart.lastIndexOf(id);
+            if (lastIndex > -1) {
+                this.cart = this.cart.filter((value, index) => { 
+                    return (lastIndex!==index);
+                });
+            }
         }
         // solution
     }
