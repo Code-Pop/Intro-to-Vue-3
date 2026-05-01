@@ -13,11 +13,11 @@
       <div class="nav-bar"></div>
 
       <div class="cart">Cart({{ cart }})</div>
-      
+
       <div class="product-display">
         <div class="product-container">
           <div class="product-image">
-            <img v-bind:src="image">
+            <img v-bind:src="image" />
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
@@ -26,8 +26,14 @@
             <ul>
               <li v-for="detail in details">{{ detail }}</li>
             </ul>
-            <div v-for="variant in variants" :key="variant.id">{{ variant.color }}</div>
-            <button class="button">Add to Cart</button>
+            <div
+              v-for="variant in variants"
+              :key="variant.id"
+              @mouseover="updateIamge(variant.image)"
+            >
+              {{ variant.color }}
+            </div>
+            <button class="button" v-on:click="addToCart">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -38,7 +44,7 @@
 
     <!-- Mount App -->
     <script>
-      const mountedApp = app.mount('#app')
+      const mountedApp = app.mount("#app");
     </script>
   </body>
 </html>
