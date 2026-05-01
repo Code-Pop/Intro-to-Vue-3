@@ -6,14 +6,75 @@
     <!-- Import Styles -->
     <link rel="stylesheet" href="./assets/styles.css" />
     <!-- Import Vue.js -->
-    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <!-- <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script> -->
   </head>
   <body>
     <div id="app">
-      <h1>Product goes here</h1>
+      <!-- referring to the product in our main.ja-->
+      <h1>have happy feet! use {{ product }} !!</h1>
+      <p>{{ description}}</p>
+      <!-- all this done, start liveServer or use http://localhost:5500 => Socks is getting displayed!!-->
     </div>
 
-    <!-- Import Js -->
+    <!-- Import VueApp -->
     <script src="./main.js"></script>
+    
+    <!-- Mount App -->
+    <script>
+      // refers to the app we just imported via main.js
+      const mountedApp = app.mount('#app')
+      // #app = argument that is a DOM selector used to plug the app into a piece of our DOM (id="app" at line 13)
+
+
+      // explanation of how this is working:
+      // when we created our Vue app, we said const app = Vue.createApp({}),
+      // then we passed in the options object. This allows us to add some optional properties in order
+      // to configure our application. 
+      // and even though its called an options object, its NOT OPTIONAL! 
+      // you always gonna have to pass in at least an empty object to get it started.
+      //
+      // doing this creates our Vue Instance which is the heart of our Vue application which powers everything.
+      // on that options object we added our data option, data() {}
+      // which returned an object full of our data, return { product: 'Socks'}
+      // as of now, its just product whose value is Socks.
+      //
+      // we then imported our app into our HTML file
+      // div id="app"
+      // h1 {{ product }}
+      // and then mounted it into the DOM, const mountedApp = app.mount('#app')
+      // which effectively plugged our app into that div container with the id of app.
+      // !! now at this point, that div and everything within it has access to our Vue app !!
+      // so we´re able to ask the app 'hey, whats the value of product?'
+      // and the app responds => Socks
+      // so when the page renders, we see socks display on the page
+      //
+      // the {{ }} allow us to run valid JavaScript within our HTML
+      // so we could do things like concatenating strings  {{ firstName + '' + lastName }}
+      // running conditional logic with the ternary operator {{ clicked ? true : false }}
+      // running message on our data and much more {{ message.method() }}
+
+      // if we change Socks to Boots in the main.js, the DOM would update to Boots
+      // how is that happening?
+      // Vue is reactive!!
+      // under the hood Vue has an entire reactivity center that handles updating
+      // so when a data value changes, anything relaying on that data value is gonna automatically update for us.
+      // we don´t have to do anything to make that happen.
+      // reactivity is covered in advanced course
+      // 
+      // if we´re using {{ product }} in multiple places within our template, and product were to update,
+      // every place that was using that value is gonna update, all thanks to Vue´s reactivity system
+      //
+      // in browser console type: mountedApp.product = 'Shoes'
+      // the DOM is gonna update automatically
+
+      // first challenge:
+      // add a data description to the data object, then display that description using an expression within a <p> tag
+      
+
+
+    </script>
+   
+
   </body>
 </html>
