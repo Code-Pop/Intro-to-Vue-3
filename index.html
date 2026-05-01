@@ -17,7 +17,7 @@
       <div class="product-display">
         <div class="product-container">
           <div class="product-image">
-            <img v-bind:src="image">
+            <img :class="{ 'out-of-stock-img' : !inStock }" v-bind:src="image">
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
@@ -31,8 +31,17 @@
               v-for="variant in variants" 
               :key="variant.id" 
               @mouseover="updateImage(variant.image)" 
-            >{{ variant.color }}</div>
-            <button class="button" @click="addToCart">Add to Cart</button>
+              class="color-circle"
+              :style="{ backgroundColor: variant.color }">{{ }}</div>
+
+            <button 
+              class="button" 
+              v-bind:class="{ disabledButton: !inStock }"
+              v-bind:disabled="!inStock" 
+              @click="addToCart">
+              Add to Cart
+            </button>
+
           </div>
         </div>
       </div>
@@ -47,3 +56,8 @@
     </script>
   </body>
 </html>
+
+<!-- Challenge: bind the out-of-stock-img class to the img whenever inStock is false -->
+<!-- 42: v-bind:disabled above says that the button should be disabled if the item is not in stock-->
+<!-- 39: bind the 'disabledButton' class from CSS to the button if the item is not in stock = !inStock -->
+<!-- 35: Camel case; this is Kebab case = :style="{ 'background-color': variant.color }">{{ }}</div> -->
