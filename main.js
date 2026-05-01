@@ -9,7 +9,8 @@ const app = Vue.createApp({
             variants: [
               { id: 2234, color: 'green', image: './assets/images/socks_green.jpg' },
               { id: 2235, color: 'blue', image: './assets/images/socks_blue.jpg' },
-            ]
+            ],
+            rickRoll: 'https://www.youtube.com/watch?v=BjDebmqFRuc'
         }
     },
     methods: {
@@ -25,6 +26,6 @@ const app = Vue.createApp({
         // solution
         updateImage(variantImage) {
             this.image = variantImage
-        }
+        },      
     }
 })
