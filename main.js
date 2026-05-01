@@ -1,1 +1,6 @@
-const product = 'Socks'
+Vue.createApp({
+  data() {
+    return { product: "Socks" };
+  },
+}).mount('#app')
+
